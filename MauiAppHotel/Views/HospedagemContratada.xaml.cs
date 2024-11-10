@@ -13,5 +13,17 @@ namespace MauiAppHotel.Views
         {
             await Navigation.PopAsync(); // Volta para a tela anterior
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PopAsync();
+
+            } catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "Ok");
+            }
+        }
     }
 }

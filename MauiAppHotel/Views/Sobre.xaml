@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+    
+    
+    <VerticalStackLayout VerticalOptions="Center" Padding="10" Spacing="30">
+
+
+        <Label Text="Sobre o Desenvolvedor" 
+           FontFamily="ExoVariable" 
+           FontSize="30" 
+           Margin="30"
+           TextColor="Coral"
+           HorizontalOptions="CenterAndExpand"/>
+
+        <Label Text="Nome:  Gabrielle Borges"
+           FontSize="20" 
+           Margin="2"
+           TextColor="{StaticResource White}"/>
+
+
+        <Label Text="E-mail: gabrielle@dev.com"
+           TextColor="{StaticResource White}"
+           Margin="2"
+           FontSize="20"/>
+
+        <Label Text="Descrição: Esse aplicativo foi desenvolvido com objetivo de facilitar as reservas de quartos em hoteis."
+           TextColor="{StaticResource White}" 
+           Margin="2"
+           FontSize="20"/>
+
+        <Label Text="Ano de Desenvolvimento: 2024"
+           TextColor="{StaticResource White}" 
+           Margin="2"
+           FontSize="20"/>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                BackgroundColor="Coral"
+                TextColor="Black" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
